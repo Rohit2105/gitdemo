@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='main.js'></script>
+</head>
+<body>
+    <form autocomplete="on">
+     <label for="uname">username</label><font color="red">*</font>
+     <input type="text"id="uname" name="uname" placeholder="enter username" 
+     required pattern="([a-zA-Z]+)\s([a-zA-Z]+)" autofocus tabindex="1"><br><br>
+     <label for="fname">Firstname</label><font color="red">*</font>
+     <input type="text"id="fname" name="fname" value="Ram" readonly><br><br>
+     <label for="mname">MiddleName</label><font color="red">*</font>
+     <input type="text"id="mname" name="mname" pattern="([a-zA-Z]*)"><br><br>
+     <label for="lname">Lastname</label><font color="red">*</font>
+     <input type="text"id="lname" name="lname" value="Sharma" disabled><br><br>
+     <label for="pwd">Password</label>
+     <input type="password" name="pwd" tabindex="2"><br><br>
+     <label for="email">email</label>
+     <input type="text" name="email" 
+     pattern="([a-zA-Z0-9_]+)@([a-zA-Z]+).([a-zA-Z]{2,3})" tabindex="3"><br><br>
+     <label for="date">date</label>
+     <input type="date" name="date"><br><br>
+     <label for="number">number</label>
+     <input type="number" name="number" min=1 max=10><br><br>
+     <label for="color">color</label>
+     <input type="color" name="color"><br><br>
+     <label for="gender">Gender</label>
+     <input type="radio" name="gen" checked value="m">Male
+     <input type="radio" name="gen" value="f">Female
+     <input type="radio" name="gen" value="o">other<br><br>
+     <label for="hobbies">Hobbies</label>
+     <input type="checkbox" name="cricket" value="circket">Cricket
+     <input type="checkbox" name="dance" value="dance">dance
+     <br><br>
+     <label for="address">Address</label>
+    <textarea rows="5" cols="30" maxlength="10" tabindex="4"></textarea><br><br>
+    <label for="city">City</label>
+    <select name="city">
+        <option selected disabled>select city</option>
+        <optgroup label="Maharashtra">
+        <option value="Pune">Pune</option>
+        <option>Mumbai</option>
+        <option>Nagpur</option>
+        </optgroup>
+        <optgroup label="Rajasthan">
+        <option>Jaipur</option>
+        <option>Udaipur</option></optgroup>
+        <optgroup label="Gujrat">
+        <option>Baroda</option>
+        <option>Ahmedabad</option>
+    </optgroup>
+    </select><br><br>
+    <label>Upload Resume</label>
+    <input type="file"><br><br>
+    <label for="number">Mobile</label>
+     <input type="text" name="number" pattern="[0-9]{10}"><br><br>
+     <input type="submit" name="submit" value="login">
+    
+     <button type="submit">Login</button>
+     <button type="submit"><a href="">Click Me</a></button>
+     <button type="button"><img src="image/e.jpg" width="50px" height="50px"></button>
+    </form>
+
+
+    <!-- <table>
+        <tr>
+            <td><label>username</label></td>
+            <td><input type="text"></td>
+        </tr>
+        <tr>
+            <td><label>password</label></td>
+            <td><input type="password"></td>
+        </tr>
+    </table> -->
+</body>
+</html>
